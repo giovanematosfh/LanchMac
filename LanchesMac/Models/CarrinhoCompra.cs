@@ -98,6 +98,8 @@ namespace LanchesMac.Models
                        _context.CarrinhoCompraItens.Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
                            .Include(s => s.Lanche)
                            .ToList());
+
+           
         }
 
         public void LimparCarrinho()
